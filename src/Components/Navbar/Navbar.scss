@@ -1,0 +1,50 @@
+@import '../../scss/colors';
+
+.navbar-container {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 3rem;
+  background: transparent;
+  border: 1px solid black;
+  .menu-items {
+    list-style: none;
+    display: flex;
+    .navLink {
+      text-decoration: none;
+      color: $fontColor;
+      font-size: 2.4rem;
+      margin: 2rem 4rem;
+      transition: all 0.5s ease-in-out;
+      position: relative;
+      text-transform: uppercase;
+
+      &::before {
+        content: attr(data-item);
+        transition: 0.5s;
+        color: black;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 0;
+        overflow: hidden;
+      }
+
+      &:hover {
+        color: lightcyan;
+        &::before {
+          width: 100%;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+//https://codepen.io/grohit/pen/jObGzdG

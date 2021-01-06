@@ -1,0 +1,13 @@
+@import './scss/reset';
+@import './scss/fonts';
+@import './scss/colors';
+
+body {
+  #root {
+    max-width: 190rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: $fontBase;
+    color: black;
+  }
+}

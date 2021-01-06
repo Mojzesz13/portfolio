@@ -1,0 +1,46 @@
+.project-container {
+  width: 100vw;
+  height: 100vh;
+  color: red;
+  overflow: hidden;
+  .block {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+    background-color: orangered;
+    z-index: 2;
+  }
+  .n {
+    position: absolute;
+    top: 10rem;
+    height: 0.5rem;
+    width: 15rem;
+    background-color: black;
+    z-index: 2;
+    img {
+      width: 6rem;
+    }
+  }
+  .n1 {
+    top: 20rem;
+  }
+  .n2 {
+    top: 30rem;
+  }
+  .n3 {
+    top: 40rem;
+  }
+  .n4 {
+    top: 50rem;
+  }
+  .main-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+}
